@@ -171,7 +171,7 @@
         function displayResult(result) {
             let output;
             try {
-                new URL(result); // Check if result is a valid URL
+                new URL(result);
                 output = `<p>QR Code Content: <a href="${result}" target="_blank">${result}</a></p>`;
             } catch (e) {
                 output = `<p>QR Code Content: ${result}</p>`;
